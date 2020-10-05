@@ -4,7 +4,8 @@ import re
 
 length = int(input('Enter password length: '))
 if length < 6:
-    print('weak password')
+    print('too weak, enter another length')
+    length = int(input('Enter password length: '))
 
 #assigning characters
 capital_letters = string.ascii_lowercase
