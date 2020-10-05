@@ -7,7 +7,6 @@ user_input = int(input('Enter a number between 0 - 20: '))
 lucky_number = random.randint(0, 21)
 
 
-
 def guess_a_num(user_input, lucky_number):
     for i in range(6):
         if lucky_number == user_input:
@@ -16,11 +15,12 @@ def guess_a_num(user_input, lucky_number):
         elif lucky_number > user_input:
             print('Oops! Too low try again')
             user_input = int(input('Enter a number between 0 - 20: '))
-        else:
+        elif lucky_number < user_input:
             print('Oops! Too high try again')
             user_input = int(input('Enter a number between 0 - 20: '))
+        else:
+            print('oops!, you are out of turns :(')
+            print('correct number was ', lucky_number)
 
        
 guess_a_num(user_input, lucky_number)
-print('oops!, you are out of turns :(')
-print('Correct number was ', lucky_number)
