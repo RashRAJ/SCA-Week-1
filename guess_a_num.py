@@ -23,3 +23,4 @@ def guess_a_num(user_input, lucky_number):
        
 guess_a_num(user_input, lucky_number)
 print('oops!, you are out of turns :(')
+print('Correct number was ', lucky_number)
