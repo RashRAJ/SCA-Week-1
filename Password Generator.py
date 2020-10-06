@@ -14,8 +14,8 @@ char = int(input('enter no of charcaters in the password: '))
 
 
 #assigning characters
-capital_letters = string.ascii_lowercase
-small_letters = string.ascii_uppercase
+Small_letters = string.ascii_lowercase
+capital_letters = string.ascii_uppercase
 numbers = string.digits
 character = string.punctuation
 
